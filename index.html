@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jagte Raho — Coming Soon</title>
+<meta name="description" content="Jagte Raho is coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:#0d0d0f;color:#f5f3ee;
+    font-family:Inter,system-ui,sans-serif;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:24px;
+    border-top:8px solid #e11d2a;
+  }
+  .live{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;
+    letter-spacing:.28em;text-transform:uppercase;color:#e11d2a;margin-bottom:28px}
+  .dot{width:10px;height:10px;border-radius:50%;background:#e11d2a;animation:pulse 1.6s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  h1{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;
+    font-size:clamp(56px,14vw,168px);line-height:.95;letter-spacing:.01em}
+  h1 span{color:#e11d2a}
+  p{margin-top:32px;font-size:clamp(15px,2.4vw,20px);letter-spacing:.42em;text-transform:uppercase;color:#a9a7a2}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none}}
+  body{justify-content:flex-start;padding-top:clamp(48px,10vh,120px);min-height:100%;height:auto}
+  .intro{margin-top:clamp(40px,7vw,72px);max-width:560px;font-size:clamp(15px,2vw,18px);line-height:1.6;color:#d6d3cc}
+  .what{margin:clamp(28px,5vw,48px) auto 48px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:#2a2a2e;border:1px solid #2a2a2e;max-width:900px;width:100%;text-align:left}
+  .what div{background:#0d0d0f;padding:24px 22px}
+  .what h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:20px;letter-spacing:.06em;text-transform:uppercase;color:#f5f3ee}
+  .what h2::before{content:"";display:block;width:22px;height:3px;background:#e11d2a;margin-bottom:12px}
+  .what span{display:block;margin-top:8px;font-size:14.5px;line-height:1.55;color:#a9a7a2}
+  @media (max-width:720px){.what{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="live"><span class="dot"></span>News</div>
+  <h1>Jagte <span>Raho</span></h1>
+  <p>Coming soon</p>
+  <div class="intro">A news site that keeps you awake to what matters. Here is what you'll find when we go live.</div>
+  <section class="what">
+    <div><h2>Local news</h2><span>Faridabad and Delhi NCR stories, reported from the ground.</span></div>
+    <div><h2>Breaking updates</h2><span>The day's top headlines as they happen, without the noise.</span></div>
+    <div><h2>Video reports</h2><span>Short video bulletins and explainers you can watch on your phone.</span></div>
+  </section>
+</body>
+</html>
